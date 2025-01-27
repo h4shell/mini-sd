@@ -1,0 +1,10 @@
+services:
+  mini-sd:
+    build: infra/docker/python
+    working_dir: /app/Text-to-Image
+    container_name: mini-sd
+    entrypoint: python app.py
+    volumes:
+      - ./:/app
+    ports:
+      - "21000:7860"
