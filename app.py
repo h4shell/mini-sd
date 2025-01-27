@@ -61,4 +61,4 @@ with gr.Blocks() as interface:#...
     generate_button.click(generate_images, inputs=[text_input, model_selector], outputs=[output1, output2, output3])
     stop_button.click(stop_generation, inputs=[], outputs=[output1, output2, output3])
 
-interface.launch()
+interface.launch(share=True)
